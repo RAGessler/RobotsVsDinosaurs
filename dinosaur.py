@@ -7,3 +7,4 @@ class Dinosaur:
         robot.health -= self.attack_power
         print(f'{robot.name} has {robot.health} hitpoints remaining!')
 dino_one = Dinosaur('Chad', 25)
+dino_one.attack('Hello') 
