@@ -9,4 +9,4 @@ class Heard:
         self.attack_power = self.dino_one.attack_power + self.dino_two.attack_power + self.dino_three.attack_power
     def attack(self, fleet):
         fleet.health -= self.attack_power
-        print(f'{fleet.name} has {fleet.health} hitpoints remaining!')
+        print(f'{fleet.name} have {fleet.health} hitpoints remaining!')

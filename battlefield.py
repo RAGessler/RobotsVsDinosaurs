@@ -1,10 +1,11 @@
 from dinosaur import Dinosaur
 from robot import Robot
-
+from fleet import Fleet
+from herd import Heard
 class Battlefield:
     def __init__(self):
-        self.robot = Robot('T-1000')
-        self.dinosaur = Dinosaur('Jeff', 40)
+        self.robot = Fleet()
+        self.dinosaur = Heard()
     def run_game(self):
         self.display_welcome()
         while self.robot.health > 0 and self.dinosaur.health > 0:

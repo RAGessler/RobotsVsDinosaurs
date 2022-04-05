@@ -1,9 +1,5 @@
 from robot import Robot
 from weapon import Weapon
-weapon_one = Weapon('Pulse Rifle', 30)
-weapon_two = Weapon('Scatter Blaster', 60)
-weapon_three = Weapon('Auto Lance', 45)
-
 class Fleet:
     def __init__(self):
         self.name = 'Terminators'
@@ -19,5 +15,8 @@ class Fleet:
         pass
     def attack(self, heard):
         heard.health -= self.attack_power
-        print(f'{heard.name} has {heard.health} hitpoints remaining!')
+        print(f'{heard.name} have {heard.health} hitpoints remaining!')
+weapon_one = Weapon('Pulse Rifle', 30)
+weapon_two = Weapon('Scatter Blaster', 60)
+weapon_three = Weapon('Auto Lance', 45)
 
