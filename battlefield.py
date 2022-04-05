@@ -14,13 +14,15 @@ class Battlefield:
         print('Welcome to the robot dino SHOWDOWN')
         print(f'{self.robot.name} has picked a fight with {self.dinosaur.name}!')
     def battle_phase(self):
-        self.robot.attack(self.dinosaur)
+        self.robot.choose_weapon()
         self.dinosaur.attack(self.robot)
+        self.robot.attack(self.dinosaur)
     def display_winner(self):
         if self.robot.health <= 0:
             print(f'{self.dinosaur.name} has defeated {self.robot.name}!')
-        elif self.dinosaur <= 0:
+        elif self.dinosaur.health <= 0:
             print(f'{self.robot.name} has defeated {self.dinosaur.name}!')
         else:
             pass
+
     
