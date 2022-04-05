@@ -3,10 +3,10 @@ from dinosaur import Dinosaur
 
 
 class Robot:
-    def __init__(self, name):
+    def __init__(self, name, weapon):
         self.name = name
         self.health = 100
-        self.active_weapon = weapon_one
+        self.active_weapon = weapon
     def attack(self, dinosaur):
         dinosaur.health -= self.active_weapon.attack_power
         print(f'{dinosaur.name} has {dinosaur.health} hitpoints remaining!')

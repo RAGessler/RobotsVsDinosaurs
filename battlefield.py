@@ -3,7 +3,7 @@ from robot import Robot
 
 class Battlefield:
     def __init__(self):
-        self.robot = Robot('T-1000')
+        self.robot = Robot('T-1000', placeholder)
         self.dinosaur = Dinosaur('Jeff', 40)
     def run_game(self):
         self.display_welcome()
