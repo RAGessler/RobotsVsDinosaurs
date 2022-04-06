@@ -25,5 +25,3 @@ class Battlefield:
             print(f'{self.robot.name} has defeated {self.dinosaur.name}!')
         else:
             pass
-
-    
